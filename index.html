@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference - Landing page</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION -->
+      <nav>
+        <img
+          src="/images/undraw_conference-speaker_balr.svg"
+          alt="logo"
+          width="100px"
+        />
+        <br />
+        <a href="#">Home</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <hr />
+
+      <section>
+        <h1>Welcome to CodeFusion 2025</h1>
+        <h2>Where code meets innovation</h2>
+        <a href="">Register Now</a>
+        <img
+          src="images/undraw_presentation_qn18.svg"
+          alt="conference image"
+          width="200px"
+        />
+      </section>
+    </header>
+    <hr />
+
+    <main>
+      <section id="About">
+        <h2>About the Event</h2>
+        <p>
+          CodeFusion 2025 is a 3-day virtual event bringing together developers,
+          designers, and tech enthusiasts from all over the world. Learn from
+          the best, connect with peers, and build your future in tech.
+        </p>
+      </section>
+
+      <section id="schedule">
+        <h2>Schedule of the Event</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Topic</th>
+              <th>Speaker</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Day 1</td>
+              <td>10:00 AM</td>
+              <td>the Future of Web</td>
+              <td>John Doe</td>
+            </tr>
+
+            <tr>
+              <td>Day 1</td>
+              <td>2:00 PM</td>
+              <td>AI &amp; you</td>
+              <td>Jane Smith</td>
+            </tr>
+
+            <tr>
+              <td>Day 2</td>
+              <td>4:00 PM</td>
+              <td>Our Environment</td>
+              <td>Amitesh Singh</td>
+            </tr>
+
+            <tr>
+              <td>Day 3</td>
+              <td>6:00 PM</td>
+              <td>Web -Developmnet</td>
+              <td>Ayush Rawat</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </section>
+
+      <section id="speakers">
+        <h2>About the Speakers at the Event</h2>
+        <article>
+          <img
+            src="images/undraw_a-woman-avatar_ifsl.svg"
+            alt="speaker's picture"
+            width="200px"
+          />
+          <h3>john Doe</h3>
+          <p><strong>Lead Web Engineer at Google</strong></p>
+          <p>
+            John is a veteran developer with 12+ years in front-end development.
+            He leads large-scale projects at Google, focusing on performance,
+            accessibility, and design systems. He’s passionate about open source
+            and helping new devs grow.
+          </p>
+        </article>
+        <hr />
+
+        <article>
+          <img
+            src="images/undraw_business-decisions_3x2a.svg"
+            alt="speaker's picture"
+            width="200px"
+          />
+          <h3>Jane Smith</h3>
+          <p><strong>AI Researcher at Open AI</strong></p>
+          <p>
+            Jane has been working in the field of artificial intelligence since
+            2015. Her work focuses on responsible AI, large language models, and
+            the ethical impact of tech. She loves mentoring and empowering women
+            in tech.
+          </p>
+        </article>
+        <hr />
+
+        <article>
+          <img
+            src="images/undraw_business-decisions_3x2a.svg"
+            alt="speaker's picture"
+            width="200px"
+          />
+          <h3>Amitesh Singh</h3>
+          <p><strong>Product Designer at Figma</strong></p>
+          <p>
+            Amitesh is a creative technologist who blends code and design. At
+            Figma, he leads the prototyping team. His sessions on design systems
+            and collaborative UI workflows are popular worldwide.
+          </p>
+        </article>
+        <hr />
+
+        <article>
+          <img
+            src="images/undraw_coding_joxb.svg"
+            alt="speaker's image"
+            width="200px"
+          />
+          <h3>Ayush Rawat</h3>
+          <p><strong>Full-Stack Developer &amp; YouTuber</strong></p>
+          <p>
+            Ayush creates educational tech content for over 500k subscribers.
+            She specializes in React, Node.js, and MongoDB. She's known for her
+            real-world tutorials and inspiring developer journey.
+          </p>
+        </article>
+        <hr />
+      </section>
+
+      <section id="register">
+        <form action="/api/registration" method="post">
+          <label for="name">Enter your name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="e.g. Ayush Rawat"
+          /><br />
+
+          <label for="email">Enter your Gmail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="e.g. AyushRawat@gmail.com"
+          />
+          <br />
+
+          <label for="age">Enter your age</label>
+          <input id="age" name="age" type="number" />
+          <br />
+
+          <p>select your gender:</p>
+          <input id="male" name="gender" type="radio" value="male" />
+          <label for="male">Male</label>
+
+          <input id="female" name="gender" type="radio" value="female" />
+          <label for="female">Female</label>
+
+          <input id="others" name="gender" type="radio" value="female" />
+          <label for="others">others</label> <br />
+
+          <label for="track">Select Track</label>
+          <select id="track" name="track">
+            <option value="Web Design">Web Dev</option>
+            <option value="AI">AI</option>
+            <option value="Design">Design</option>
+          </select>
+          <br />
+
+          <p>For which days you are looking to check:</p>
+          <input type="checkbox" id="html" name="skills" value="HTML" />
+          <label for="html">Day 1</label><br />
+
+          <input type="checkbox" id="css" name="skills" value="CSS" />
+          <label for="css">Day 2</label><br />
+
+          <input type="checkbox" id="js" name="skills" value="JavaScript" />
+          <label for="js">Day 3</label><br />
+
+          <label for="comment">Any Comments </label> <br />
+          <textarea name="comments" id="comment" rows="5" cols="50"></textarea>
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="FAQ">
+        <h2>f.A.Q's</h2>
+        <details>
+          <summary>Is the event free?</summary>
+          <p>
+            Yes, the event is completely free for all registered participants.
+          </p>
+        </details>
+
+        <details>
+          <summary>will snacks be provided in the event?</summary>
+          <p>Yes, to every participants.</p>
+        </details>
+
+        <details>
+          <summary>Is ayush a good speaker?</summary>
+          <p>Yes, he is the best .</p>
+        </details>
+      </section>
+
+      <section id="contact">
+        <h2>Want to Connect ?</h2>
+        <li>
+          <img
+            src="images/mail-outline.svg"
+            alt="email icon"
+            width="20px"
+          />Email
+        </li>
+        <li>
+          <img
+            src="images/call-outline (1).svg"
+            alt="phone icon"
+            width="20px"
+          />Phone
+        </li>
+        <li>
+          <img
+            src="images/home-outline.svg"
+            alt="house icon"
+            width="20px"
+          />Address
+        </li>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 CodeFusion</p>
+      <ul>
+        <li>
+          <a href="/condition.html"
+            ><img
+              src="images/pencil-outline.svg"
+              alt="pen icon"
+              width="20px"
+            />Terms and Condition</a
+          >
+        </li>
+        <li>
+          <a href="/privacy.html"
+            ><img
+              src="images/finger-print-outline.svg"
+              alt="fingerprint icon"
+              width="20px"
+            />Privacy</a
+          >
+        </li>
+        <li>
+          <a href="/contact.html"
+            ><img
+              src="images/call-outline.svg"
+              alt="phone icon"
+              width="20px"
+            />Contact</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
